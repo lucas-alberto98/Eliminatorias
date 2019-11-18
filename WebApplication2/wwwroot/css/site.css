@@ -1,0 +1,68 @@
+﻿.fundo-topbar {
+    background-image: linear-gradient(to right, #220246, #9e55ff);
+}
+nav li a{
+    color: #fff !important;
+}
+
+a.btn{
+    color: #fff !important;
+}
+
+.card .card-header {
+    background-color: #530286;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.modal-content{
+    border: none;
+}
+
+.modal .modal-header {
+    background-color: #530286;
+    color: #fff;
+}
+
+.time {
+    border: solid #000 1px;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.time .nome {
+    border: solid #000 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
+.rodadas{
+    display: flex;
+    flex-direction: row;
+}
+.rodada{
+    margin-right: 20px;
+}
+.ganhador {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.ganhador .opcao {
+    padding: 30px;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #530286;
+}

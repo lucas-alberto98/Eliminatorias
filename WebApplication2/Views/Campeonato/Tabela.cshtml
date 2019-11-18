@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Tabela";
+    Layout = null;
+    TimeModel time = new TimeModel();
+}
+
+<div class="rodadas">
+    @foreach (var group in ViewBag.jogos)
+    {
+        <div class="rodada">
+
+            <div class="text-center">
+                <h5>Rodada @group.Key</h5>
+            </div>
+
+            @foreach (var jogo in group.Values)
+            {
+                <a id="selecionar-vencedor" style="cursor: pointer"
+                   data-vs1-nome="@time.Exibir(jogo.Id_Time1)"
+                   data-vs2-nome="@time.Exibir(jogo.Id_Time2)"
+                   data-vs1-id="@jogo.Id_Time1"
+                   data-vs2-id="@jogo.Id_Time2"
+                   >
+                    <div class="time" >
+                        <div class="nome">@time.Exibir(jogo.Id_Time1)</div>
+
+                        <div class="nome">@time.Exibir(jogo.Id_Time2)</div>
+                    </div>
+                </a>
+                
+
+            }
+        </div>
+    }
+</div>
+

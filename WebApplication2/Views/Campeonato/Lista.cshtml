@@ -1,0 +1,30 @@
+﻿@{ 
+    Layout = null;
+}
+<table style="margin-top: 20px;" class="table">
+    <thead style="color: #fff; background-color: #530286">
+        <tr>
+            <th scope="col">#Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Data</th>
+            <th scope="col">Status</th>
+            <th scope="col">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (List<Campeonato>)ViewBag.campeonatos)
+        {   
+
+            <tr>
+                <th scope="row">@item.Id_Campeonato</th>
+                <td>@item.Nome</td>
+                <td>@item.Data_criacao</td>
+                <td>@(!item.Em_progresso ? "Em Progresso" : "Finalizado") </td>
+                <td><a asp-controller="Campeonato" asp-action="Editar" asp-route-id_campeonato=@item.Id_Campeonato >Editar</a></td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>

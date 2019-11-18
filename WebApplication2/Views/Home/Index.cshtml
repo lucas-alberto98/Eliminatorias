@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row" style="margin-top: 15px;">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Novo Campeonato
+            </div>
+            <div class="card-body text-center">
+                <h2>Cadastrar Campeonato</h2>
+                <p>
+                    Para adicionar um time Clique aqui
+                </p>
+                <a data-toggle="modal" data-target="#modalExemplo" class="btn btn-block btn-success">Adicionar Time</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Novo Time
+            </div>
+            <div class="card-body text-center">
+                <h2>Cadastrar Jogo</h2>
+                <p>
+                    Para adicionar um novo Jogo Clique aqui
+                </p>
+                <a data-toggle="modal" data-target="#modal2" class="btn btn-block btn-success">Adicionar Time</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="margin-top: 15px;">
+        <div class="card">
+            <div class="card-header">
+                Campeonato
+            </div>
+            <div class="card-body">
+                <div class="rodadas">
+                    <div class="rodada">
+                        <div class="text-center">
+                            <h5>Rodada 1</h5>
+                        </div>
+                        
+                        <div class="time">
+                            <div class="nome">Time A</div>
+                            <div class="nome">Time B</div>
+                        </div>
+                        <div class="time">
+                            <div class="nome">Time C</div>
+                            <div class="nome">Time D</div>
+                        </div>
+                    </div>
+                    <div class="rodada">
+                        <div class="text-center">
+                            <h5>Rodada 2</h5>
+                        </div>
+                        
+                        <div class="time">
+                            <div class="nome">Time A</div>
+                            <div class="nome">Time C</div>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="novo-time">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input id="nome-time" type="text" class="form-control" placeholder="Entre com o Nome">
+                    </div>
+                    <div class="float-right">
+                        <button class="btn btn-danger">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastrar Jogo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <p>Insira o nome de dois times para começar.</p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" placeholder="Time 1" />
+                    </div>
+                    <div class="text-center">
+                        <h5>VS.</h5>
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" placeholder="Time 2" />
+                    </div>
+                    <div class="float-right">
+                        <button class="btn btn-danger">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Continuar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
